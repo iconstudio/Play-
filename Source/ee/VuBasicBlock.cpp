@@ -241,6 +241,8 @@ CVuBasicBlock::INTEGER_BRANCH_DELAY_INFO CVuBasicBlock::GetIntegerBranchDelayInf
 	// If the relevant set instruction is not part of this block, use initial value of the integer register.
 
 	INTEGER_BRANCH_DELAY_INFO result;
+	return result;
+
 	auto arch = static_cast<CMA_VU*>(m_context.m_pArch);
 	uint32 adjustedEnd = m_end - 4;
 
